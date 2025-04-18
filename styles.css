@@ -1,0 +1,205 @@
+:root {
+  --bg-dark: #222222;
+  --bg-darker: #1a1a1a;
+  --accent: #f5d16e;
+  --hover: #c29519;
+  --text: #ffffff;
+  --text2: #fadd9e;
+  --border-copy: #aaaaaa;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text);
+  line-height: 1.6;
+}
+#nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #222222;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.logo {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  color: var(--accent);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--text);
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: var(--accent);
+}
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+#hero {
+  padding-top: 6rem;
+  background: radial-gradient(circle, rgba(245, 209, 110, 0.3), transparent);
+}
+h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+button {
+  background-color: var(--accent);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: var(--hover);
+}
+button a {
+  text-decoration: none;
+  color: var(--bg-dark);
+}
+.features-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: fit-content;
+  margin: 50px auto;
+}
+.feature {
+  background-color: var(--bg-darker);
+  padding: 1rem;
+  border: 1px solid var(--border-copy);
+  border-radius: 8px;
+  text-align: left;
+  padding: 20px 80px 20px 80px;
+}
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  flex-wrap: wrap;
+}
+
+.intro-container img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.intro-text {
+  max-width: 600px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text2);
+}
+.medical-bottle {
+  width: 15vw;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+}
+.small-medical-bottle {
+  display: inline;
+  width: 13vw;
+  border-radius: 20px;
+  padding: 0.1vw;
+  margin: 0 10px;
+  margin-top: 25px;
+  transition: 0.4s ease;
+}
+.small-medical-bottle:hover {
+  border: 3px solid var(--accent);
+  scale: 1.1;
+}
+#pricing {
+  text-align: center;
+  margin-top: 40px;
+}
+.pricing-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+.pricing-box {
+  background-color: rgba(255, 255, 255, 0.089);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.623);
+  padding: 20px;
+  width: 340px;
+  height: 380px;
+  text-align: center;
+}
+.pricing-box h3 {
+  font-size: 30px;
+  font-family: "Orbitron";
+  margin-bottom: 10px;
+  background: radial-gradient(circle, rgba(245, 209, 110, 0.3), transparent);
+}
+.description-price {
+  font-size: 24px;
+  color: var(--text2);
+  margin: 20px;
+  font-weight: 500;
+}
+.description-desc {
+  font-size: 16.3px;
+  margin: 20px auto 20px auto;
+}
+.price {
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--text2);
+  margin-top: 30px;
+}
+.buy-button {
+  background-color: var(--accent);
+  color: #000;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 30px;
+}
+.buy-button:hover {
+  background-color: var(--hover);
+}
+footer {
+  background-color: #1a1a1a;
+  padding: 30px;
+  font-size: 14px;
+  color: var(--border-copy);
+  text-align: center;
+}
+.disclaimer {
+  font-style: italic;
+  margin-top: 1rem;
+}

@@ -195,8 +195,9 @@ button a {
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
   padding: 20px;
-  width: 340px;
-  height: 380px;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
   text-align: center;
 }
 .pricing-box h3 {
